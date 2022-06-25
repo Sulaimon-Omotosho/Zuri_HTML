@@ -1,47 +1,47 @@
+
 *{
-    margin: auto;
     box-sizing: border-box;
 }
 
-header{
-    background-image: url('Images/bg-hero-mobile.svg');
-    background-color: hsl(193, 100%, 96%);
-    
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    padding-bottom: 70px;
-    font-size: 16px;
-    position: relative;
-}
-main h4{
-    font-size: large;
-    font-weight: bold;
-    margin-bottom: 0px;
-}
-main p{
+body{
+    margin: auto;
+    font-size: 18px;
     color: hsl(208, 11%, 55%);
 }
-.box-1{
-    padding-top: 10px;
-    padding-bottom: 20px;
+body h3{
+    font-size: 30px;
+    font-weight: 600px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+header{
+    color: black;
+    background-image: url('Images/bg-hero-mobile.svg');
+    background-color: hsl(193, 100%, 96%);
     margin: auto;
+    margin-bottom: 80px;
+}
+
+.topnav{
     display: grid;
     grid-template-areas: 
-    'a b'
-    ;
+    'a a a a a a a b';
+    grid-gap: 80px;
+    margin: 30px;
+    padding-top: 10px;
 }
-.logo{
-    grid-area:a;
-    margin-right:80%;
+.logo1{
+    width: 150px;
+    grid-area: a;
 }
-.try-it{
-    font-size: 10px;
-    grid-area:b;
-    margin-left: 80%;
+.topnav-but{
+    grid-area: b;
+    float: right;
+    align-items: right;
+    padding-left: 0px;
+}
+.tryit{
     width: 100px;
     padding: 7px;
     border-radius: 15px;
@@ -49,27 +49,18 @@ main p{
     background-color: white;
 }
 
-.box-2{
-    margin: auto;
+.mockup{
     display: grid;
     grid-template-areas: 
-    'a b'
-    ;
-    gap: px;
-    width: 95%;
+    'a b';
+}
+.mockup-txt{
+    grid-area: a;
+    width: 500px;
+    margin-top: 100px;
     margin: auto;
-    
 }
-.mockup1{
-    grid-area:a;
-    padding-top: 30px;
-}
-.mockup2{
-    float: left;
-    margin-left: 300px;
-    grid-area: b;
-}
-.mockup-button{
+.get{
     border: 1px;
     border-radius: 18px;
     background-color: hsl(322, 100%, 66%);
@@ -78,113 +69,115 @@ main p{
     text-align: center;
     display: inline-block;
     font-size: 8px;
-    margin: 4px 2px;
     cursor: pointer;
 }
+.mockup-img{
+    grid-area: b;
+    width: 600px;
+}
 
-.box-3{
-    display: grid;
-    grid-template-areas: 
-    'a b'
-    ;
-    padding: 20px;
-    box-shadow: 1px 1px 14px 8px rgb(245, 244, 244);
-    gap: px;
+main{
     width: 80%;
     margin: auto;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border-style: dashed;
-    border: 1px;
-    border-radius: 20px;
-    border-width: 4px;
-}
-.grow1{
-    margin-top: 40px;
-    margin-left: 40px;
-    padding-left: 20px;
-    grid-area:a;
-}
-.grow2{
-    margin-left: 40px;
-    grid-area: b;
+    margin-bottom: 200px;
 }
 
-.box-4{
+.grow{
     display: grid;
     grid-template-areas: 
-    'a b'
-    ;
-    padding: 20px;
-    box-shadow: 1px 1px 14px 8px rgb(245, 244, 244);
-    gap: px;
-    width: 80%;
-    margin: auto;
+    'a b';
+    padding: 30px;
     margin-bottom: 20px;
-    border-style: dashed;
-    border: 1px;
+    border-style: outset;
+    border-color: rgb(250, 244, 244);
+    border-width: 1px;
     border-radius: 20px;
-    border-width: 4px;
 }
-
-.flow1{
-    margin-left: 40px;
-    grid-area:a;
+.grow-txt{
+    grid-area: a;
+    padding-left: 100px;
+    padding-top: 70px;
 }
-.flow2{
-    margin-top: 40px;
-    margin-left: 40px;
-    padding-left: 20px;
+.grow-image{
     grid-area: b;
+    float: right;
+}
+.grow-img{
+
+    width: 350px;
+    float: right;
 }
 
-.box-5{
+.flow{
     display: grid;
     grid-template-areas: 
-    'a b'
-    ;
-    padding: 20px;
-    box-shadow: 1px 1px 14px 8px rgb(245, 244, 244);
-    gap: px;
-    width: 80%;
-    margin: auto;
+    'a b';
+    padding: 30px;
     margin-bottom: 20px;
-    border-color: black;
-    border: 1px;
+    border-style: outset;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
     border-radius: 20px;
-    border-width: 4px;
+}
+.flow-image{
+    grid-area: a;
+    padding-left: 50px;
+}
+.flow-img{
+    width: 350px;
+}
+.flow-txt{
+    grid-area: b;
+    padding-top: 50px;
+    padding-left: 100px;
 }
 
-.users1{
-    margin-top: 40px;
-    margin-left: 40px;
-    padding-left: 20px;
-    grid-area:a;
+.users{
+    display: grid;
+    grid-template-areas: 
+    'a b';
+    padding: 30px;
+    margin-bottom: 20px;
+    border-style: outset;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 20px;
 }
-.users2{
+.users-txt{
+    grid-area: a;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.users-image{
     grid-area: b;
+    padding-left: 40px;
+    margin-left: 50px;
+}
+.users-img{
+    padding-left: 50px;
+    width: 350px;
 }
 
 .floater{
     background-color: rgb(241, 246, 250);
     padding: 20px;
-    margin-left: 37%;
+    margin: auto;
     border-radius: 5px;
     text-align: center;
     position: absolute;
-    top: 94%;
-    width: 500px;
-    height: 140px;
+    left: 420px;
+    top: 247%;
+    width: 600px;
+    height: 160px;
 }
 .floater h3{
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.floatb{
+.float-b{
     border: 1px;
     border-radius: 18px;
-    margin-bottom: 70px;
     background-color: hsl(322, 100%, 66%);
     color: white;
     padding: 10px 40px;
@@ -195,129 +188,253 @@ main p{
 }
 
 footer{
-    margin-top: 40px;
-    padding-top: 40px;
-    color: hsl(208, 11%, 55%);
     background-color: hsl(192, 100%, 9%);
-    text-align: left;
-    margin: auto;
+    color: hsl(208, 11%, 55%);
+    padding: 40px;
+    padding-top: 120px;
+    font-size: 13px;
+}
+.details{
     display: grid;
     grid-template-areas: 
-    'a b c d'
-    '. . . e';
-    font-size: 16px;
+    'a . . .'
+    'b c d e'
+    '. . . f'
+    ;
 }
-footer a{
-    color: white;
-    padding-bottom: 80px;
-    text-decoration: none;
-}
-
-.foot-1{
+.foot-logo{
     grid-area: a;
-    padding-left: 70px;
+}
+.logo-2{
+    width: 200px;
+    filter: grayscale(100%) invert(100%);
 }
 .contact{
-    margin: auto;
-}
-
-.img1{
-    display: flex;
-    margin-left: 40px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
-.img2{
-    display: flex;
-    margin-right: 70px;
-    margin-left: 1px;
-}
-.img3{
-    display: flex;
-    margin-right: 50px;
-    margin-top: 7px;
-}
-
-.foot-2{
     grid-area: b;
-    padding: 2em;
-    margin-left: 20px;
 }
-.foot-3{
+a {
+    font-size: 18px;
+    color: hsl(208, 11%, 55%);
+    text-decoration: none;
+}
+a:hover {
+    background-color:hsl(322, 100%, 66%);
+}
+.about{
     grid-area: c;
-    padding: 2em;
+    color: hsl(208, 11%, 55%);
 }
-.foot-4{
+.info{
     grid-area: d;
-    padding: 2em;
-    margin-top: 5px;
 }
-.foot-5{
+.social{
     grid-area: e;
-    font-size: 10px;
+    display: flex;
+}
+.fb-logo{
+    width: 35px;
+    height: 35px;
+    filter: invert(100%);
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 7px;
+}
+.twi-logo{
+    width: 35px;
+    height: 35px;
+    filter: invert(100%);
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 7px;
+    margin-left: 6px;
+}
+.ins-logo{
+    width: 35px;
+    height: 35px;
+    filter: invert(100%);
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 7px;
+    margin-left: 6px;
+}
+.copy{
+    text-align: left;
+    grid-area: f;
 }
 
-@media screen and (max-width: 1440px){
 
-    header{
-        background-image: url('Images/bg-hero-mobile.svg');
-        background-color: hsl(193, 100%, 96%);
+@media screen and (max-width: 1440px) {
+    .floater{
+        top: 1720px;
     }
-
 }
+
 @media screen and (max-width: 375px){
-    header{
-        background-image: url('Images/bg-hero-mobile.svg');
-        background-size: 300px 100px;
-        background-color: hsl(193, 100%, 96%);
-    }
-    body{
-        display: flex;
-        flex-direction: column;
+
+    *{
         margin: auto;
-        font-size: 20px;
-        width: 100%;
-    }
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-    .box-1{
-        grid-template-areas: 
-        'a b';
-        margin-left: 0%;
-        width: 375px;
-    }
-    .logo{
-        margin-right: 580px;
-    }
-    .try-it{
-        margin-left: 0px;
-    }
-    .box-2{
-        display: flex;
-        flex-direction: column;
-        margin-right: 1000px;
-        width: 375px;
-    }
-    .box-3{
-        display: flex;
-        flex-direction: column-reverse;
-        width: 90%;
-    }
-    .box-4{
-        display: flex;
-        flex-direction: column;
-    }
-    .box-5{
-        display: flex;
-        flex-direction: column-reverse;
     }
 
-    footer {
+    body{
+        width: 375px;
+        text-align: center;
+    }
+
+    header{
         display: flex;
         flex-flow: column;
+        background-image: url('Images/bg-hero-mobile.svg');
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        padding-top: 0px;
+    }
+    .topnav{
+        display: flex;
+        margin: 0px;
+    }
+    .logo1{
+        width: 100px;
+        margin: 10px;
+    }
+    .topnav-but{
+        margin-right: 10px;
+        align-items: right;
+        padding-left: 0px;
+    }
+    .tryit{
+        width: 100px;
+        padding: 7px;
+        border-radius: 10px;
+        border-color: white;
+        background-color: white;
+        height: 28px;
     }
 
-    /* i need more practice for this stuff */
+    .mockup{
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        width: 375px;
+        padding-top: 30px;
+    }
+    .mockup-txt{
+        width: 320px;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+    .get{
+        margin: 20px;
+    }
+    .mockup-img{
+        width: 300px;
+    }
+
+    main {
+        margin: auto;
+        width: 375px;
+        margin-bottom: 150px;
+    }
+    .grow{
+        display: flex;
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+    }
+    .grow-img{
+        width: 320px;
+    }
+    .grow-txt{
+        padding: 10px;
+    }
+    .flow{
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+    }
+    .flow-image{
+        padding: 10px;
+    }
+    .flow-img{
+        width: 320px;
+    }
+    .flow-txt{
+        padding: 15px;
+    }
+    .users{
+        display: flex;
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+    }
+    .users-image{
+        padding: 15px;
+        margin: auto;
+    }
+    .users-img{
+        width: 320px;
+    }
+    .users-txt{
+        padding: 15px;
+    }
+
+
+    .floater{
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        position: absolute;
+        left: 40px;
+        top: 2350px;
+        width: 300px;
+        height: 150px;
+    }
+    footer {
+        width: 375px;
+        display: flex;
+        flex-flow: column;
+        padding: 20px;
+        padding-top: 100px;
+        text-align: left;
+    }
+    .floater h3{
+        font-size: px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .float-b{
+        border: 1px;
+        padding: 10px 40px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .details{
+        display: flex;
+        flex-flow: column;
+        margin-left: 0px;
+    }
+    .foot-logo{
+        margin-left: 0px;
+        width: 150px;
+    }
+    .logo-2{
+        width: 150px;
+    }
+    .about{
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .info{
+        margin-left: 0px;
+    }
+    a {
+        font-size: 18px;
+        color: hsl(208, 11%, 55%);
+        text-decoration: none;
+    }
+    a:hover {
+        background-color:hsl(322, 100%, 66%);
+    }
+    .social{
+        margin-top: 20px;
+    }
+    
 }
